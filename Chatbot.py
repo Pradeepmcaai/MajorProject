@@ -51,8 +51,7 @@ chatbot_tokenizer = AutoTokenizer.from_pretrained(chatbot_name, padding_side='le
 chatbot_tokenizer.add_special_tokens({'pad_token': chatbot_tokenizer.eos_token})  # Add a new pad token
 chatbot_model = AutoModelForCausalLM.from_pretrained(chatbot_name)
 
-# Load the ASC606classification model
-# Load the ASC606classification model
+
 model_path = "./twitter_full.pkl"
 # Load the model
 with open(model_path, 'rb') as file:
